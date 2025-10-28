@@ -17,22 +17,23 @@ O foco é educativo: entender o funcionamento, coletar evidências e propor medi
 ---
 
 ## Estrutura do repositório
-/ (repo root)
-  README.md
-  requirements.txt
-  /simulations
-  ransomware.py          
-  descriptografar.py
-    keylogger.py           # (logs locais; encerra com ESC)
-    keylogger_email.py     # Envio de e-mail
+/ (repo root)  
+  README.md  
+  requirements.txt  
+  /simulations  
+  ransomware.py            
+  descriptografar.py  
+    keylogger.py           # (encerra com ESC)  
+    keylogger_email.py     # Envio de e-mail  
+
+     
+O que cada arquivo faz (resumido)  
   
-O que cada arquivo faz (resumido)
+ransomware.py — Cria chave de criptografia, percorre test_files/, cria cópias cifradas dos arquivos sobrescrevendo originais, grava um arquivo de resgate e aapresenta em tela cheia, foi criado rotina para que os arquivos ja criptografados nao seja criptografados mais de uma vez caso o "MALWARE" seja executado constantemente antes da execução do descritografador.  
 
-ransomware.py — Cria chave de criptografia, percorre test_files/, cria cópias cifradas dos arquivos sobrescrevendo originais, grava um arquivo de resgate e aapresenta em tela cheia, foi criado rotina para que os arquivos ja criptografados nao seja criptografados mais de uma vez caso o "MALWARE" seja executado constantemente antes da execução do descritografador.
+descriptografar.py — lê os dados da pasta  test_files valida header e tenta restaurar os arquivos sobrescrevendo os arquivos critografados usando a mesma chave usada para a criptografia.  
 
-descriptografar.py — lê os dados da pasta  test_files valida header e tenta restaurar os arquivos sobrescrevendo os arquivos critografados usando a mesma chave usada para a criptografia.
-
-keylogger.py — registra teclas em log com timestamp; É um app-controlado (listener).
+keylogger.py — registra teclas em log com timestamp; É um app-controlado (listener).  
 
 keylogger_email.py — faz envio das teclas digitadas no periodo de 60, constantes do log ao e-mail configurado, zerando o log e recomençando a partir dai;
 
