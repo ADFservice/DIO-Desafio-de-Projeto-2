@@ -22,6 +22,9 @@ O foco é educativo: entender o funcionamento, coletar evidências e propor medi
   YARA.md  
   requirements.txt  
   /simulations  
+    /test_files  
+      dados.txt  
+      senhas.txt **(outros arquivos podem ser incluidos)**
   ransomware.py            
   descriptografar.py  
     keylogger.py           # (encerra com ESC)  
