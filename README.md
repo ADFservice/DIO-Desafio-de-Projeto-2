@@ -95,7 +95,7 @@ Valida os arquivos e grava arquivos restaurados em test_files
 
 4 — Keylogger
 python simulations\keylogger.py
-# pressione ESC para encerrar
+ **pressione ESC para encerrar**
 
 
 O app encerra quando ESC é pressionado.
@@ -108,12 +108,12 @@ O "envio" é feito para o e-mail configurado.
 
 ## Medidas de segurança e deteção (para o relatório)
 
-# A — Indicadores observáveis (IOCs)
+## A — Indicadores observáveis (IOCs)
 
 Arquivos criados: LEIA ISSO.TXT
 
 
-# B — Como detectar
+## B — Como detectar
 
 Heurísticas EDR: detecção de criação massiva de arquivos; acessos a muitos arquivos em sequência; processos Python invocando I/O intenso.
 
@@ -121,7 +121,7 @@ Regras [YARA](https://github.com/ADFservice/DIO-Desafio-de-Projeto-2/YARA.md) (e
 
 Monitoramento de processos persistentes e mudanças em serviços/autorun.
 
-# C — Mitigação e resposta
+## C — Mitigação e resposta
 
 Isolar host e coletar evidências (imagem, logs, dump de memória).
 
@@ -130,6 +130,8 @@ Restaurar de backup verificado; não pagar resgate.
 Hardening: least-privilege, aplicação de patches, application allowlisting, EDR com heurísticas.
 
 Treinamento de usuários contra phishing (vetor comum).
+
+# Aviso legal e ético
 
 Estes exemplos têm fins exclusivamente educacionais. Qualquer uso para acessar, monitorar ou danificar sistemas sem consentimento é ilegal e antiético. Use somente em ambientes controlados e com autorização.
 
