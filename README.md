@@ -130,3 +130,13 @@ Restaurar de backup verificado; não pagar resgate.
 Hardening: least-privilege, aplicação de patches, application allowlisting, EDR com heurísticas.
 
 Treinamento de usuários contra phishing (vetor comum).
+
+Estes exemplos têm fins exclusivamente educacionais. Qualquer uso para acessar, monitorar ou danificar sistemas sem consentimento é ilegal e antiético. Use somente em ambientes controlados e com autorização.
+
+Contato / Créditos
+
+Desenvolvido por: Adriano Guedes Ferraz
+
+Curso: BootCamp Dio/SAntander de CyberSegurança
+
+Se precisar, abra uma issue no repositório ou me peça alterações no README.
