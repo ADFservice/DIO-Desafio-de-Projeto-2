@@ -70,7 +70,7 @@ Criar pasta de teste: crie test_files/ com cópias de arquivos não sensíveis (
 
 Nunca comite chaves (*.key) no repositório.
 
-Como executar (comandos e explicações)
+Como executar (comandos e explicações)  
 1 — ver o que seria feito
 
 Lista arquivos candidatos e codifica:
