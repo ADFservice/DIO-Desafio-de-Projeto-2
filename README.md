@@ -60,29 +60,29 @@ Criar pasta de teste: crie test_files/ com cópias de arquivos não sensíveis (
 Nunca comite chaves (*.key) no repositório.
 
 Como executar (comandos e explicações)
-1 — Dry-run (ver o que seria feito)
+1 — ver o que seria feito
 
-Lista arquivos candidatos sem tocar nada:
+Lista arquivos candidatos e codifica:
 
-python simulations\ransomware.py --target test_files --dry-run
+python simulations\ransomware.py
 
-2 — Executar a simulação de ransomware (gera locked_sim/)
-python simulations\ransomware_sim.py --target test_files --key-file sim_key.key --artifacts-dir artifacts --logfile artifacts\ransom.log --fullscreen
+2 — Executar o ransomware
+python simulations\ransomware.py
 
 
-Cria test_files/locked_sim/ com arquivos *.locked_sim (cada um contém um header identificador + payload cifrado).
+Cria test_files/ com arquivos.
 
-Cria INSTRUCTION_RESCUE.txt dentro de locked_sim/.
+Cria LEIA ISSO.TXT.
 
 --fullscreen abre uma janela com a mensagem de resgate (apenas visual).
 
-3 — Restaurar (simulado)
-python simulations\descriptografar.py --target test_files --key-file sim_key.key --artifacts-dir artifacts
+3 — Restaurar
+python simulations\descriptografar.py
 
 
-Valida os .locked_sim e grava arquivos restaurados em test_files/restored/.
+Valida os arquivos e grava arquivos restaurados em test_files
 
-4 — Keylogger (educacional)
+4 — Keylogger
 python simulations\keylogger.py
 # pressione ESC para encerrar
 
@@ -99,14 +99,14 @@ O "envio" é feito para o e-mail configurado.
 
 # A — Indicadores observáveis (IOCs)
 
-Arquivos criados: INSTRUCTION_RESCUE.txt
+Arquivos criados: LEIA ISSO.TXT
 
 
 # B — Como detectar
 
 Heurísticas EDR: detecção de criação massiva de arquivos; acessos a muitos arquivos em sequência; processos Python invocando I/O intenso.
 
-Regras YARA (ex.: busca por INSTRUCTION_RESCUE.txt ).
+Regras [YARA]{https://github.com/ADFservice/DIO-Desafio-de-Projeto-2/YARA.md} (ex.: busca por LEIA ISSO.TXT ).
 
 Monitoramento de processos persistentes e mudanças em serviços/autorun.
 
