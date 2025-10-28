@@ -19,13 +19,12 @@ O foco é educativo: entender o funcionamento, coletar evidências e propor medi
 ## Estrutura do repositório
 / (repo root)
   README.md
-  .gitignore
   requirements.txt
   /simulations
-    ransomware.py          # Simulação segura (gera cópias .locked_sim)
-    descriptografar.py     # Restauração simulada (cria restored/)
-    keylogger.py           # Keylogger educacional (logs locais; encerra com ESC)
-    keylogger_email.py     # Envio SIMULADO (grava envios em logs)
+  ransomware.py          
+  descriptografar.py
+    keylogger.py           # (logs locais; encerra com ESC)
+    keylogger_email.py     # Envio de e-mail
   
 O que cada arquivo faz (resumido)
 
