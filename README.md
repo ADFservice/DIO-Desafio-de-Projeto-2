@@ -17,18 +17,25 @@ O foco é educativo: entender o funcionamento, coletar evidências e propor medi
 ---
 
 ## Estrutura do repositório
-/ (repo root)  
-  README.md  
-  YARA.md  
-  requirements.txt  
-  /simulations  
-    /test_files  
-      dados.txt  
-      senhas.txt **(outros arquivos podem ser incluidos)**
-  ransomware.py            
-  descriptografar.py  
-    keylogger.py           # (encerra com ESC)  
-    keylogger_email.py     # Envio de e-mail  
+```
+/ (raiz do repositório)
+├── README.md
+├── YARA.md
+├── requirements.txt
+├── .gitignore
+├── /simulations
+|   └── /test_files **(mais arquivos podem ser inclusos)**
+|   │   ├── dados.txt
+|   │   ├── senhas.txt 
+│   ├── ransomware_sim.py
+│   ├── descriptografar_sim.py
+│   ├── keylogger_sim.py
+│   └── keylogger_email_sim.py
+├── /images
+│   └── exemplo_execucao.png
+└── /artifacts
+    └── log_execucao.txt
+```
 
      
 O que cada arquivo faz (resumido)  
