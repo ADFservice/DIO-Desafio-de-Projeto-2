@@ -19,6 +19,7 @@ O foco é educativo: entender o funcionamento, coletar evidências e propor medi
 ## Estrutura do repositório
 / (repo root)  
   README.md  
+  YARA.md  
   requirements.txt  
   /simulations  
   ransomware.py            
