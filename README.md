@@ -106,7 +106,7 @@ Arquivos criados: LEIA ISSO.TXT
 
 Heurísticas EDR: detecção de criação massiva de arquivos; acessos a muitos arquivos em sequência; processos Python invocando I/O intenso.
 
-Regras [YARA]{https://github.com/ADFservice/DIO-Desafio-de-Projeto-2/YARA.md} (ex.: busca por LEIA ISSO.TXT ).
+Regras [YARA](https://github.com/ADFservice/DIO-Desafio-de-Projeto-2/YARA.md) (ex.: busca por LEIA ISSO.TXT)
 
 Monitoramento de processos persistentes e mudanças em serviços/autorun.
 
