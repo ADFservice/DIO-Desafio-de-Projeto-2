@@ -62,7 +62,7 @@ pip install -r requirements.txt
 
 Preparação segura (passo a passo)
 
-VM isolada: crie uma VM Windows 10 e desative compartilhamentos de pastas/ネットワーク sensíveis.
+VM isolada: crie uma VM Windows 10 e desative compartilhamentos de pastas sensíveis.
 
 Snapshot: tire um snapshot/checkpoint antes de qualquer teste.
 
